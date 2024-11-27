@@ -1,16 +1,8 @@
 .container {
   margin: 0 auto;
   background-size: cover;
-  width: 100vw;
 }
 
-.one {
-  -webkit-mask-image: url(../img/splat1.png);
-          mask-image: url(../img/splat1.png);
-  -webkit-mask-position: center;
-          mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  margin: 0 auto;
-  width: 80vw;
+.container__image {
+  width: 100vw;
 }/*# sourceMappingURL=index.css.map */

@@ -6,16 +6,13 @@
     // height: auto;
     // aspect-ratio: 16 / 5;
     background-size: cover;
-    width: 100vw;
+    // width: 100vw;
 }
 
-.one {
-    mask-image: url(../img/splat1.png);
-mask-position: center;
-mask-repeat: no-repeat;
-margin: 0 auto;
-width: 80vw;
-// mask-size: 1
+.container__image {
+
+width: 100vw;
+
 }
 
 
