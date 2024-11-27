@@ -36,32 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     
 //>  ████████████████████████████████████  GENERAL PROGRAM
 
-let p = document.getElementsByTagName('p')[2];
 
-let previousS = p.previousSibling;
 
-console.log(previousS);
-console.log(previousS);
-
-previousS.previousSibling.style.backgroundColor = 'blue';
 
 
 //>  ████████████████████████████████████  GENERAL PROGRAM
 
 
 
-let bodyChildren = document.body.children;
-console.log(bodyChildren.length);
-
-let div = document.getElementsByTagName('div')[0];
-
-let grandparent =  div.parentNode.parentNode;
-console.log(grandparent);
-
-grandparent.style.backgroundColor = 'red';
-
-let h1 = document.getElementsByTagName('h1')[0];
-console.log(h1);
 
 
 

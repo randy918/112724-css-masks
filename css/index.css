@@ -1,1 +1,15 @@
-/*# sourceMappingURL=index.css.map */
+.container {
+  margin: 0 auto;
+  width: 1100px;
+  height: auto;
+  aspect-ratio: 16/5;
+  background-size: cover;
+}
+
+.one {
+  -webkit-mask-image: url;
+          mask-image: url;
+}
+.one img {
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */
