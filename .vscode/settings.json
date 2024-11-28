@@ -32,5 +32,27 @@
     "cSpell.words": [
         "ashutterstock",
         "childnodes"
+    ],
+    "favorites.resources": [
+        {
+            "filePath": "index.html",
+            "group": "Default"
+        },
+        {
+            "filePath": "css/index.scss",
+            "group": "Default"
+        },
+        {
+            "filePath": "css/reset.scss",
+            "group": "Default"
+        },
+        {
+            "filePath": "css/universal.scss",
+            "group": "Default"
+        },
+        {
+            "filePath": "js/index.js",
+            "group": "Default"
+        }
     ]
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 409</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/universal.css">
     <link rel="stylesheet" href="css/index.css">
@@ -16,21 +17,57 @@
     <main>
 
         <h1>CSS Clip Path Mask</h1>
-     
+
         <div class="container">
             <div class="container__image-wrapper">
-              <img src="/img/ashutterstock_2260187227.jpg" class="container__image" alt="Description of image">
+                <img src="/img/ashutterstock_2260187227.jpg" class="container__image" alt="Description of image">
             </div>
+
             <svg id="clip-svg">
-              <clipPath id="tallMask" clipPathUnits="objectBoundingBox">
-                <rect class="cls-1" x="0.25" y="0" width="0.5" height="1" rx="0.025" ry="0.025"></rect>
-              </clipPath>
+                <clipPath id="tallMask" clipPathUnits="objectBoundingBox">
+                    <rect class="cls-1" x="0.25" y="0" width="0.5" height="1" rx="0.025" ry="0.025"></rect>
+                </clipPath>
             </svg>
-          </div>
+
+            <div id="app__container">
+
+                <div id="app__container__searchBar">
+
+                    <input type="text" id='searchBar__input' placeholder='Search by City'>
+
+                    <button id='searchBar__icon'><i class='fa fa-search' aria-hidden='true'></i></button>
+
+                    <div id="app__dateAndCity">
+                        <p id='app__dateAndCity__date'></p>
+                        <h3 id="app__dateAndCity__city"></h3>
+                    </div>
+
+                    <div id="app__description"></div>
+                    <div id="app__temp"></div>
+                    <div id="app__highsLows">
+
+                        <div class="col">
+                            <div class="info">
+                                <h5>Highs</h5>
+                                <p id='tempMax'></p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="info">
+                                <h5>Lows</h5>
+                                <p id='tempMin'></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </main>
-
-
 
     <script src="./js/myfunctions.js"></script>
     <script type="module" src="./js/index.js"></script>
