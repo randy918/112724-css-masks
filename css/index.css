@@ -1,8 +1,22 @@
 .container {
+  overflow: hidden;
+  position: relative;
   margin: 0 auto;
-  aspect-ratio: 16/5;
+  aspect-ratio: 16/12;
   background-size: cover;
   width: 100%;
+  container-type: inline-size;
+}
+
+.container__image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-clip-path: url("#tallMask");
+          clip-path: url("#tallMask");
 }
 
 .container__image {
@@ -10,4 +24,18 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: blur(15px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@container (min-width: 0) {
+  #clip-svg {
+    height: 100%;
+    width: auto;
+  }
+  .cls-1 {
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=index.css.map */

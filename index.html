@@ -17,9 +17,16 @@
 
         <h1>CSS Clip Path Mask</h1>
      
-     <div class="container">
-     <img src="/img/ashutterstock_2402783767.jpg" alt="" class = 'container__image'>
-     </div>
+        <div class="container">
+            <div class="container__image-wrapper">
+              <img src="/img/ashutterstock_2260187227.jpg" class="container__image" alt="Description of image">
+            </div>
+            <svg id="clip-svg">
+              <clipPath id="tallMask" clipPathUnits="objectBoundingBox">
+                <rect class="cls-1" x="0.25" y="0" width="0.5" height="1" rx="0.025" ry="0.025"></rect>
+              </clipPath>
+            </svg>
+          </div>
 
     </main>
 
