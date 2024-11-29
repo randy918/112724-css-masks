@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const weatherData = await weatherDataFetch.json();
             console.log(weatherData);
             city.innerHTML = `${weatherData.name}`;
+            description.innerHTML = `${weatherData.weather[0].main}`;
         }
         catch (error) {
             console.error(error);

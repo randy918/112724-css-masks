@@ -142,6 +142,21 @@ z-index: 300;
     // left: 43%;
 }
 
+#app__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    position: absolute;
+    top: 30%;
+    // left: 43%;
+    
+    font-size: 8vw;
+    font-family: 'light';
+}
+
     //>  ████████████████████████████████████  3
 
 

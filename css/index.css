@@ -122,4 +122,16 @@
     position: absolute;
     top: 24%;
   }
+  #app__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    position: absolute;
+    top: 30%;
+    font-size: 8vw;
+    font-family: "light";
+  }
 }/*# sourceMappingURL=index.css.map */
