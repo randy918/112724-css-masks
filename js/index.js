@@ -59,12 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             const weatherData = await weatherDataFetch.json();
             console.log(weatherData);
+            city.innerHTML = `${weatherData.name}`;
         }
         catch (error) {
             console.error(error);
         }
     }
     
+    
+    
+    
+
     let pictures = ["/img/ashutterstock_2260187227.jpg", "/img/ashutterstock_2274444143.jpg", "/img/ashutterstock_2290464509.jpg", "/img/ashutterstock_2308412739.jpg", "/img/ashutterstock_2325872667.jpg", "/img/ashutterstock_2402783767.jpg", "/img/shutterstock_2260187227.jpg", "/img/shutterstock_2274444143.jpg", "/img/shutterstock_2290464509.jpg", "/img/shutterstock_2308412739.jpg", "/img/ashutterstock_497267167.jpg", "/img/shutterstock_2402783767.jpg", "/img/ashutterstock_497764618.jpg", "/img/shutterstock_2402783767.jpg",]
 
     function getRandomImg() {
@@ -72,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(randomPicture);
         return randomPicture;
     }
-    
+
     async function catchRainbow() {
         const response = await fetch(getRandomImg());
         const blob = await response.blob();
@@ -80,27 +85,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     }
-    
-    
+
+    //?  ████████████████████████████████████  ASYNC AWAIT
+
+
+    //>  ████████████████████████████████████  GENERAL PROGRAM
+
     catchRainbow();
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+    getWeather();
+
+
+
+
+
+
+
+
+
+    //>  ████████████████████████████████████  GENERAL PROGRAM
+
+
 })
-//?  ████████████████████████████████████  ASYNC AWAIT
-
-
-//>  ████████████████████████████████████  GENERAL PROGRAM
-
-
-
 
 
 
