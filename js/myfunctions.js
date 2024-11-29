@@ -157,7 +157,7 @@ function get24Hour00() {
 function getDayVerbal() {
   const today = new Date();
   const codeDay = today.getDay() + 1;
-  return theDay[codeDay];
+  return days[codeDay];
 }
 
 function getDay00() {
@@ -178,7 +178,7 @@ function getDay() {
 function getMonthVerbal() {
   const today = new Date();
   const codeMonth = today.getMonth() + 1;
-  return theMonth[codeMonth];
+  return months[codeMonth];
 }
 
 function getMonth00() {
@@ -273,8 +273,7 @@ function addCSSText(myIdClass, text) {
 }
 
 //!  72519.1714    Common Basic VARIABLE ARRAYS
-var theDay = new Array(
-  "Zero",
+const days = new Array(
   "Sunday",
   "Monday",
   "Tuesday",
@@ -283,20 +282,18 @@ var theDay = new Array(
   "Friday",
   "Saturday"
 );
-var theDayMin3 = new Array(
-  "Zero",
-  "Sun.",
-  "Mon.",
-  "Tues.",
-  "Wed.",
-  "Thurs.",
-  "Fri.",
-  "Sat."
+const daysMin3 = new Array(
+  "Sun",
+  "Mon",
+  "Tue",
+  "Wed",
+  "Thu",
+  "Fri",
+  "Sat"
 );
-var theDayMin2 = new Array("Zero", "S", "M", "Tu", "W", "Th", "F", "S");
-var theDayMin1 = new Array("Zero", "S", "M", "T", "W", "T", "F", "S");
-var theMonth = new Array(
-  "Zero",
+const daysMin2 = new Array("Su", "Mo", "Tu", "We", "Th", "Fr", "Sa");
+const daysMin1 = new Array("S", "M", "T", "W", "T", "F", "S");
+const months = new Array(
   "January",
   "February",
   "March",
@@ -310,20 +307,19 @@ var theMonth = new Array(
   "November",
   "December"
 );
-var theMonthMin = new Array(
-  "Zero",
-  "Jan.",
-  "Feb.",
-  "Mar.",
-  "Apr.",
+const monthsMin = new Array(
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
   "May",
-  "June",
-  "July",
-  "Aug.",
-  "Sept.",
-  "Oct.",
-  "Nov.",
-  "Dec."
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
 );
 
 function showDateTimeFormat() {
