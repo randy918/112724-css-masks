@@ -1,7 +1,7 @@
 //>  ████████████████████████████████████  1
 
 .container {
-//^ ████████████████████████████████████  overflow might be needed
+    //^ █████████████████  overflow might be needed
     // overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -10,9 +10,9 @@
     width: 100%;
     container-type: inline-size;
     text-align: center;
-  }
-  
-  .container__image-wrapper {
+}
+
+.container__image-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -21,9 +21,9 @@
     transform: translateX(-50%);
     clip-path: url('#tallMask');
     z-index: -100;
-  }
-  
-  .container__image {
+}
+
+.container__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -31,23 +31,89 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  @container (min-width: 0) {
+}
+
+@container (min-width: 0) {
     #clip-svg {
-      height: 80%;
-      width: auto;
+        height: 80%;
+        width: auto;
     }
 
-//>  ████████████████████████████████████  2
+    //>  ████████████████████████████████████  2
 
 
-//>  ████████████████████████████████████  3
+    #app__container__searchBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1vw;
+        position: absolute;
+        top: 10%;
+        left: 31.5%;
+    }
+
+    #searchBar__input {
+
+        background-color: none;
+        border: none;
+        line-height: 1.5;
+        width: 32vw;
+        padding-left: 4vw;
+        font-size: 2vw;
+        background: rgba($color: #FFFFFF, $alpha: 0.1);
+    }
+
+    #info__highs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1vw;
+        position: absolute;
+        top: 90%;
+        left: 31.5%;
+    }
+
+    #info__lows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1vw;
+        position: absolute;
+        top: 90%;
+        left: 63.5%;
+    }
+
+    input::placeholder {
+        color: white;
+        font-size: 2.5vw;
+    }
+
+    #searchBar__icon {
+
+        font-size: 1.75vw;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.1)
+    }
+
+i {
+
+width: 3vw;
+
+}
 
 
-//>  ████████████████████████████████████  4
+
+    //>  ████████████████████████████████████  3
 
 
-//>  ████████████████████████████████████  5
+    //>  ████████████████████████████████████  4
+
+
+    //>  ████████████████████████████████████  5
 
 }

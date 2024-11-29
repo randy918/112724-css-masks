@@ -36,4 +36,61 @@
     height: 80%;
     width: auto;
   }
+  #app__container__searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    position: absolute;
+    top: 10%;
+    left: 31.5%;
+  }
+  #searchBar__input {
+    background-color: none;
+    border: none;
+    line-height: 1.5;
+    width: 32vw;
+    padding-left: 4vw;
+    font-size: 2vw;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  #info__highs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    position: absolute;
+    top: 90%;
+    left: 31.5%;
+  }
+  #info__lows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1vw;
+    position: absolute;
+    top: 90%;
+    left: 63.5%;
+  }
+  input::-moz-placeholder {
+    color: white;
+    font-size: 2.5vw;
+  }
+  input::placeholder {
+    color: white;
+    font-size: 2.5vw;
+  }
+  #searchBar__icon {
+    font-size: 1.75vw;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  i {
+    width: 3vw;
+  }
 }/*# sourceMappingURL=index.css.map */
