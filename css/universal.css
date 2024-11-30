@@ -7,6 +7,10 @@
   font-family: "light";
   src: url("../fonts/FiraSans-Light.ttf");
 }
+@font-face {
+  font-family: "very-light";
+  src: url("../fonts/IBMPlexMono-Thin.otf");
+}
 * {
   font-family: "bold";
   color: black;
@@ -22,9 +26,10 @@ h1 {
 }
 
 h2 {
-  font-family: "bold";
-  font-size: 4vw;
-  color: black;
+  font-family: "very-light";
+  font-size: 30vw;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: -3vw;
 }
 
 h3 {
@@ -36,7 +41,13 @@ h3 {
 h4 {
   font-family: "bold";
   font-size: 2vw;
-  color: black;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-family: "very-light";
+  font-size: 8vw;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 p {
@@ -47,4 +58,8 @@ p {
 
 .white {
   color: white;
+}
+
+.make-span {
+  letter-spacing: -3vw;
 }/*# sourceMappingURL=universal.css.map */

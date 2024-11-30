@@ -61,20 +61,37 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(weatherData);
             city.innerHTML = `${weatherData.name}`;
             description.innerHTML = `${weatherData.weather[0].main}`;
+            app__tempImg.innerHTML = `<img class='weather-icon' src = 'http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png'>`
+            app__temp.innerHTML = `<h2>${Math.round(weatherData.main.temp)}</h2>`
+
+            function fahrenheitToCelsius(element) {
+                return (element) * 9 / 5 + 32;
+            }
+
+            const tempCelsius = weatherData.main.temp;
+            const tempCelsiusHigh = weatherData.main.temp_max;
+            const tempCelsiusLow = weatherData.main.temp_min;
+            const tempFahrenheit = (tempCelsius * 9 / 5) + 32;
+            app__temp.innerHTML = `<h2>${Math.round(fahrenheitToCelsius(tempCelsius))}&deg;</h2>`;
+            tempMax.innerHTML = `<h5>${Math.round(fahrenheitToCelsius(tempCelsiusHigh))}&deg;</h5>`;
+            tempMin.innerHTML = `<h5>${Math.round(fahrenheitToCelsius(tempCelsiusLow))}&deg;</h5>`;
         }
         catch (error) {
             console.error(error);
         }
     }
-    
-    
-    
-    
 
-    let pictures = ["/img/ashutterstock_2260187227.jpg", "/img/ashutterstock_2274444143.jpg", "/img/ashutterstock_2290464509.jpg", "/img/ashutterstock_2308412739.jpg", "/img/ashutterstock_2325872667.jpg", "/img/ashutterstock_2402783767.jpg", "/img/shutterstock_2260187227.jpg", "/img/shutterstock_2274444143.jpg", "/img/shutterstock_2290464509.jpg", "/img/shutterstock_2308412739.jpg", "/img/ashutterstock_497267167.jpg", "/img/shutterstock_2402783767.jpg", "/img/ashutterstock_497764618.jpg", "/img/shutterstock_2402783767.jpg",]
+
+
+
+
+
+    let pictures = ["/img/cd1.webp",]
+
+    // let pictures = ["/img/ashutterstock_2260187227.jpg", "/img/ashutterstock_2274444143.jpg", "/img/ashutterstock_2290464509.jpg", "/img/ashutterstock_2308412739.jpg", "/img/ashutterstock_2325872667.jpg", "/img/ashutterstock_2402783767.jpg", "/img/shutterstock_2260187227.jpg", "/img/shutterstock_2274444143.jpg", "/img/shutterstock_2290464509.jpg", "/img/shutterstock_2308412739.jpg", "/img/ashutterstock_497267167.jpg", "/img/shutterstock_2402783767.jpg", "/img/ashutterstock_497764618.jpg", "/img/shutterstock_2402783767.jpg",]
 
     function getRandomImg() {
-        let randomPicture = pictures[r(pictures.length)];
+        let randomPicture = pictures[r(pictures.length - 1)];
         console.log(randomPicture);
         return randomPicture;
     }

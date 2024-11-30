@@ -58,6 +58,10 @@
         {
             "filePath": "js/myfunctions.js",
             "group": "Default"
+        },
+        {
+            "filePath": "-.txt",
+            "group": "Default"
         }
     ]
 }
